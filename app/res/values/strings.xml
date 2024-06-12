@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My Wallet</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="fix_btn">確定</string>
+
+    <string name="agree_title">同意事項</string>
+    <string name="agree_desc1">本アプリをご利用されるにあたっていかなる損失も補償いたしかねます</string>
+    <string name="agree_desc2">本アプリをアンインストールすると作成した秘密鍵も削除されます</string>
+    <string name="agree_desc3">本アプリはTestNet用です。絶対にMainNetのBitCoinを送金しないでください！</string>
+    <string name="agree_yourData_title">個人情報について</string>
+    <string name="agree_yourData_desc">個人情報の取得、第三者に提供することは一切ございません。</string>
+    <string name="agreement">同意する</string>
+
+    <string name="about_app_title">このウォレットアプリについて</string>
+    <string name="about_app_desc1">本アプリはTestNet用です。絶対にMainNetのBitCoinを送金しないでください！</string>
+    <string name="about_app_desc2">本アプリは個人情報の取得は一切行いません</string>
+    <string name="about_app_desc3">本アプリによって発生したいかなる損失も保障いたしかねます</string>
+    <string name="about_app_desc4">本アプリをアンインストールすると作成した秘密鍵も削除されます</string>
+    <string name="about_app_desc5">このアプリで作成された秘密鍵はこの端末に保存されます</string>
+
+    <string name="version">Version : 1.0.0</string>
+
+    <string name="balance">残高</string>
+    <string name="market_capitalization">時価総額</string>
+    <string name="yen">円</string>
+
+    <string name="send">送金</string>
+    <string name="receive">受取</string>
+
+    <string name="example_btc">0.001 (BTC)</string>
+    <string name="receive_address">受取アドレス</string>
+
+    <string name="hint_input_value">金額(例：0.001)</string>
+
+</resources>
