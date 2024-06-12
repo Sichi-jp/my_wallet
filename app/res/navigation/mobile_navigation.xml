@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.mywallet.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_receive"
+            app:destination="@+id/receive_btc"
+            app:exitAnim="@anim/slide_to_left"
+            app:enterAnim="@anim/slide_from_right"
+            />
+
+        <action
+            android:id="@+id/action_home_to_send"
+            app:destination="@+id/send_btc"
+            app:exitAnim="@anim/slide_to_right"
+            app:enterAnim="@anim/slide_from_left"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.mywallet.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.mywallet.ui.notifications.NotificationsFragment"
+        android:label="about_app"
+        tools:layout="@layout/about_app" />
+
+    <fragment
+        android:id="@+id/receive_btc"
+        android:name="com.example.mywallet.ui.receive.ReceiveFragment"
+        android:label="receive_btc"
+        tools:layout="@layout/receive" />
+
+    <fragment
+        android:id="@+id/send_btc"
+        android:name="com.example.mywallet.ui.send.SendFragment"
+        android:label="send_btc"
+        tools:layout="@layout/send" >
+
+        <action
+            android:id="@+id/action_send_to_home"
+            app:destination="@+id/navigation_home"
+            app:exitAnim="@anim/slide_to_left"
+            app:enterAnim="@anim/slide_from_right"
+            />
+    </fragment>
+
+</navigation>
