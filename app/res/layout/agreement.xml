@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".startup.AgreementFragment">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/agree_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/desc1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="40dp"
+            android:text="@string/agree_desc1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="40dp"
+            android:text="@string/agree_desc2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc1" />
+
+            <TextView
+                android:id="@+id/yourData_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/agree_yourData_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/desc2" />
+
+        <TextView
+            android:id="@+id/yourData_desc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="35dp"
+            android:text="@string/agree_yourData_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yourData_title" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agreement"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yourData_desc"
+            app:layout_constraintVertical_bias="0.237" />
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/fix_button"
+            android:text="@string/fix_btn"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
